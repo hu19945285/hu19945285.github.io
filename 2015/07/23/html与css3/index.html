@@ -4,35 +4,35 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>web网页搭建：HTML与CSS（二） | 胡志伟&#39;s blog</title>
+    <title>web网页搭建：HTML与CSS（三） | 胡志伟&#39;s blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="胡志伟">
     
 
     
-    <meta name="description" content="为页面添加图像一般图像：示例代码：1&amp;lt;img src=&quot;../image.jpg&quot; alt=&quot;代替文本&quot; width=&quot;48&quot; height=&quot;100&quot;&amp;gt;
+    <meta name="description" content="CSS基础样式
+生成css独立文件并在html中引用12345&amp;lt;head&amp;gt;       &amp;lt;style type=&quot;text/css&quot;&amp;gt;       //css代码       &amp;lt;/style&amp;gt;......
 
 
-属性解释：1.src==source：指定图像的相对位置2.alt==alter：图像为正常显示时，用此文本代替图像3.width,height：调整图像的大小，单位为像素
-倘若图像过大，可采用缩略图，并用超链接链接到原图像lo">
+可改为：123&amp;lt;head&amp;gt;       &amp;lt;link type=&quot;style/css&quot; rel=&quot;stylesheet&quot; href=&quot;st">
 <meta property="og:type" content="article">
-<meta property="og:title" content="web网页搭建：HTML与CSS（二）">
-<meta property="og:url" content="http://yoursite.com/2015/07/18/html与css2/index.html">
+<meta property="og:title" content="web网页搭建：HTML与CSS（三）">
+<meta property="og:url" content="http://yoursite.com/2015/07/23/html与css3/index.html">
 <meta property="og:site_name" content="胡志伟's blog">
-<meta property="og:description" content="为页面添加图像一般图像：示例代码：1&amp;lt;img src=&quot;../image.jpg&quot; alt=&quot;代替文本&quot; width=&quot;48&quot; height=&quot;100&quot;&amp;gt;
+<meta property="og:description" content="CSS基础样式
+生成css独立文件并在html中引用12345&amp;lt;head&amp;gt;       &amp;lt;style type=&quot;text/css&quot;&amp;gt;       //css代码       &amp;lt;/style&amp;gt;......
 
 
-属性解释：1.src==source：指定图像的相对位置2.alt==alter：图像为正常显示时，用此文本代替图像3.width,height：调整图像的大小，单位为像素
-倘若图像过大，可采用缩略图，并用超链接链接到原图像lo">
-<meta property="og:updated_time" content="2015-07-17T16:11:16.883Z">
+可改为：123&amp;lt;head&amp;gt;       &amp;lt;link type=&quot;style/css&quot; rel=&quot;stylesheet&quot; href=&quot;st">
+<meta property="og:updated_time" content="2015-07-23T14:16:21.401Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="web网页搭建：HTML与CSS（二）">
-<meta name="twitter:description" content="为页面添加图像一般图像：示例代码：1&amp;lt;img src=&quot;../image.jpg&quot; alt=&quot;代替文本&quot; width=&quot;48&quot; height=&quot;100&quot;&amp;gt;
+<meta name="twitter:title" content="web网页搭建：HTML与CSS（三）">
+<meta name="twitter:description" content="CSS基础样式
+生成css独立文件并在html中引用12345&amp;lt;head&amp;gt;       &amp;lt;style type=&quot;text/css&quot;&amp;gt;       //css代码       &amp;lt;/style&amp;gt;......
 
 
-属性解释：1.src==source：指定图像的相对位置2.alt==alter：图像为正常显示时，用此文本代替图像3.width,height：调整图像的大小，单位为像素
-倘若图像过大，可采用缩略图，并用超链接链接到原图像lo">
+可改为：123&amp;lt;head&amp;gt;       &amp;lt;link type=&quot;style/css&quot; rel=&quot;stylesheet&quot; href=&quot;st">
 
     
     <link rel="alternative" href="/atom.xml" title="胡志伟&#39;s blog" type="application/atom+xml">
@@ -92,14 +92,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/07/18/html与css2/" title="web网页搭建：HTML与CSS（二）" itemprop="url">web网页搭建：HTML与CSS（二）</a>
+      <a href="/2015/07/23/html与css3/" title="web网页搭建：HTML与CSS（三）" itemprop="url">web网页搭建：HTML与CSS（三）</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="胡志伟" target="_blank" itemprop="author">胡志伟</a>
 		
   <p class="article-time">
-    <time datetime="2015-07-17T16:08:23.000Z" itemprop="datePublished"> 发表于 2015-07-18</time>
+    <time datetime="2015-07-23T14:16:54.000Z" itemprop="datePublished"> 发表于 2015-07-23</time>
     
   </p>
 </header>
@@ -108,20 +108,33 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#为页面添加图像"><span class="toc-number">1.</span> <span class="toc-text">为页面添加图像</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一般图像："><span class="toc-number">1.1.</span> <span class="toc-text">一般图像：</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#倘若图像过大，可采用缩略图，并用超链接链接到原图像"><span class="toc-number">1.1.0.0.1.</span> <span class="toc-text">倘若图像过大，可采用缩略图，并用超链接链接到原图像</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#logo:"><span class="toc-number">1.2.</span> <span class="toc-text">logo:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML5新标准"><span class="toc-number">2.</span> <span class="toc-text">HTML5新标准</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#CSS基础样式"><span class="toc-number">1.</span> <span class="toc-text">CSS基础样式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#生成css独立文件并在html中引用"><span class="toc-number">1.0.1.</span> <span class="toc-text">生成css独立文件并在html中引用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码格式"><span class="toc-number">1.0.2.</span> <span class="toc-text">代码格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#字体与颜色"><span class="toc-number">1.0.3.</span> <span class="toc-text">字体与颜色</span></a></li></ol></li></ol></li></ol>
 		
 		</div>
 		
-		<ul>
-<li><h2 id="为页面添加图像">为页面添加图像</h2><h3 id="一般图像：">一般图像：</h3>示例代码：<figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img <span class="variable">src=</span><span class="string">"../image.jpg"</span> <span class="variable">alt=</span><span class="string">"代替文本"</span> <span class="variable">width=</span><span class="string">"48"</span> <span class="variable">height=</span><span class="string">"100"</span>&gt;</span><br></pre></td></tr></table></figure>
+		<h1 id="CSS基础样式">CSS基础样式</h1><ul>
+<li><h3 id="生成css独立文件并在html中引用">生成css独立文件并在html中引用</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="title">style</span> <span class="attribute">type</span>=<span class="value">"text/css"</span>&gt;</span><span class="css"></span><br><span class="line">       //<span class="tag">css</span>代码</span><br><span class="line">       </span><span class="tag">&lt;/<span class="title">style</span>&gt;</span></span><br><span class="line">......</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>属性解释：<br>1.src==source：指定图像的相对位置<br>2.alt==alter：图像为正常显示时，用此文本代替图像<br>3.width,height：调整图像的大小，单位为像素</p>
-<h6 id="倘若图像过大，可采用缩略图，并用超链接链接到原图像">倘若图像过大，可采用缩略图，并用超链接链接到原图像</h6><h3 id="logo:">logo:</h3><p>logo背景为透明色，一般为gif格式，若直接保存会有白边。解决办法：用PS保存为web格式时，注意将杂边（蒙边）修改为背景色。</p>
+<p>可改为：<br><figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="subst">&lt;</span>head<span class="subst">&gt;</span></span><br><span class="line">       <span class="subst">&lt;</span><span class="keyword">link</span> <span class="keyword">type</span><span class="subst">=</span><span class="string">"style/css"</span> rel<span class="subst">=</span><span class="string">"stylesheet"</span> href<span class="subst">=</span><span class="string">"style.css"</span><span class="subst">&gt;</span></span><br><span class="line"><span class="attribute">...</span><span class="attribute">...</span></span><br></pre></td></tr></table></figure></p>
+<p>说明：<br>1.type:文件类型<br>2.rel==relation：指明链接的文件与html的关系<br>3.href:文件路径</p>
 <ul>
-<li><h2 id="HTML5新标准">HTML5新标准</h2><ul><br><li>页面以&lt;!doctype html&gt;开头：告诉浏览器html版本为html5</li><br><li>根元素为<html>,根元素下只有<head>和</head><body></body></html></li><br><li>在head中包含<meta charset="utf-8">：告诉浏览器字符编码</li><br><li><head>中需要包含<title>元素</title></head></li><br><li>检查属性：例如alt属性的必要性</li><br><li>…</li><br></ul>
+<li><h3 id="代码格式">代码格式</h3>1.对元素属性设置<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">h1</span>,<span class="tag">h2</span><span class="rules">&#123;</span><br><span class="line">     <span class="rule"><span class="attribute">font-family</span>:<span class="value"> sans-serif</span></span>;</span><br><span class="line">     <span class="rule"><span class="attribute">color</span>:<span class="value">gray</span></span>;</span><br><span class="line">     &#125;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
+<p>2.对类中元素属性设置<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">h2</span><span class="class">.green</span>&#123;     <span class="comment">//若对类中所有元素设置，则改为： .green</span></span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>说明：<br>green为类名，h2为该类的一个元素。<strong><em>可为一个元素设置多个类</em></strong>，格式如下：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">h2</span> <span class="attribute">class</span>=<span class="value">"green undert rect"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">h2</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>3.属性的继承<br>将整个html看成一棵树的话，假如对其中某个元素p设置一属性，则p元素中的元素都会从p中继承了这一属性。css总是会优先匹配最特定的设置。</p>
+<ul>
+<li><h3 id="字体与颜色">字体与颜色</h3><strong>1.字体</strong><br>字体代码格式：<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="rule"><span class="attribute">font-family</span>:<span class="value">verdana,geneva,arial,sans-serif</span></span>;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>说明：后三种字体依次为备用字体，按顺序优先级<br>自定义字体：<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="at_rule">@font-face</span>&#123;</span><br><span class="line"><span class="attribute">font-family</span>: <span class="string">"new font"</span>;      <span class="comment">//自定义字体名称</span></span><br><span class="line"><span class="attribute">src</span>: <span class="function">url</span>(<span class="string">"http://....."</span>);          <span class="comment">//url链接</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>字体大小设置技巧（便于缩放，若设置为px格式，缩放会改变格式）：<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">body</span>&#123;<span class="attribute">font-size</span>: small; &#125;</span><br><span class="line"><span class="tag">h1</span>&#123;<span class="attribute">font-size</span>: <span class="number">150%</span>; &#125;     <span class="comment">//或 h1&#123;font-size: 1.5em; &#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>说明:默认字体为small，其他基于small改变比例，可缩放不变形<br><strong>2.颜色</strong><br>css中颜色采用rgb模式，颜色指定方法有：<br>①直接指定<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="rule"><span class="attribute">background-color</span>:<span class="value"> silver</span></span>;</span><br></pre></td></tr></table></figure></p>
+<p>②rgb百分比指定<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="function">rgb</span>(<span class="number">80%</span>,<span class="number">40%</span>,<span class="number">0</span>)</span></span>;</span><br></pre></td></tr></table></figure></p>
+<p>③rgb值指定（0-255）<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="function">rgb</span>(<span class="number">204</span>,<span class="number">102</span>,<span class="number">34</span>)</span></span>;</span><br></pre></td></tr></table></figure></p>
+<p>④十六进制码指定<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">background-color</span>: <span class="hexcolor">#cc6600</span>;  <span class="comment">//cc,66,00依次为红蓝绿</span></span><br></pre></td></tr></table></figure></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -144,7 +157,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2015/07/18/html与css2/" data-title="web网页搭建：HTML与CSS（二） | 胡志伟&#39;s blog" data-tsina="844471533@qq.com" class="share clearfix">
+	  <div data-url="http://yoursite.com/2015/07/23/html与css3/" data-title="web网页搭建：HTML与CSS（三） | 胡志伟&#39;s blog" data-tsina="844471533@qq.com" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -157,19 +170,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/07/18/整体性学习/" title="整体性学习">
-  <strong>上一篇：</strong><br/>
-  <span>
-  整体性学习</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2015/07/17/html与css1/"  title="web网页搭建：HTML与CSS（一）">
+<a href="/2015/07/18/整体性学习/"  title="整体性学习">
  <strong>下一篇：</strong><br/> 
- <span>web网页搭建：HTML与CSS（一）
+ <span>整体性学习
 </span>
 </a>
 </div>
@@ -178,7 +183,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2015/07/18/html与css2/" data-title="web网页搭建：HTML与CSS（二）" data-url="http://yoursite.com/2015/07/18/html与css2/"></div>
+	<div class="ds-thread" data-thread-key="2015/07/23/html与css3/" data-title="web网页搭建：HTML与CSS（三）" data-url="http://yoursite.com/2015/07/23/html与css3/"></div>
 </section>
 
 
@@ -188,7 +193,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#为页面添加图像"><span class="toc-number">1.</span> <span class="toc-text">为页面添加图像</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一般图像："><span class="toc-number">1.1.</span> <span class="toc-text">一般图像：</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#倘若图像过大，可采用缩略图，并用超链接链接到原图像"><span class="toc-number">1.1.0.0.1.</span> <span class="toc-text">倘若图像过大，可采用缩略图，并用超链接链接到原图像</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#logo:"><span class="toc-number">1.2.</span> <span class="toc-text">logo:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML5新标准"><span class="toc-number">2.</span> <span class="toc-text">HTML5新标准</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#CSS基础样式"><span class="toc-number">1.</span> <span class="toc-text">CSS基础样式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#生成css独立文件并在html中引用"><span class="toc-number">1.0.1.</span> <span class="toc-text">生成css独立文件并在html中引用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码格式"><span class="toc-number">1.0.2.</span> <span class="toc-text">代码格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#字体与颜色"><span class="toc-number">1.0.3.</span> <span class="toc-text">字体与颜色</span></a></li></ol></li></ol></li></ol>
  
   </div>
 
