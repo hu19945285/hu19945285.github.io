@@ -1,0 +1,49 @@
+body{
+     background-color:#d2b48c;
+     margin-left:20%;
+     margin-right:20%;
+     border:2px dotted black;
+     font-family:cursive;
+     font-size:small;
+     padding:10px 10px 10px 10px;
+    }
+
+/*
+p{
+ background-color: red;
+ }
+ */
+
+h1,h2{
+     font-family: sans-serif;
+     color:gray;
+     }
+
+h1{
+  border-bottom: 1px solid black;
+}
+h2.green{
+  color: red;
+}
+.green{
+  color:green;
+}
+
+.guarantee{
+  line-height: 1.9em;
+  font-style: italic;
+  border-color: #d2b48c;
+  border-width: 5px;
+  border-style:dashed;
+  border-top-color: blue;
+  border-radius: 20px;
+  color:#554444;
+  background-color: #a7cece;
+  padding:25px;
+  padding-left: 220px;
+  margin: 30px;
+  background-image: url(images/background.png);
+  background-repeat: repet-x;
+  background-position: top left;
+  background-size: 55em;
+}
