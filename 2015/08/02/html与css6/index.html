@@ -1,0 +1,532 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>web网页搭建：HTML与CSS（六） | 胡志伟&#39;s blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="胡志伟">
+    
+
+    
+    <meta name="description" content="布局与定位
+页面的布局一.流1.块元素从上往下流，个元素之间有一个换行。每个元素默认占浏览器整个宽度；内联元素在水平方向互相挨着，总体上从左上方流向右下方。2.并排放置内联元素：左元素外边距10px，右元素外边距10px，两个元素之间会有20px的空间；上下放置两个块元素。他们共同的外边距会折叠在一起，两个边框的距离为最大的外边距高度。3.浮动元素（float）：置于块元素上方，不影响正常的页面流">
+<meta property="og:type" content="article">
+<meta property="og:title" content="web网页搭建：HTML与CSS（六）">
+<meta property="og:url" content="http://yoursite.com/2015/08/02/html与css6/index.html">
+<meta property="og:site_name" content="胡志伟's blog">
+<meta property="og:description" content="布局与定位
+页面的布局一.流1.块元素从上往下流，个元素之间有一个换行。每个元素默认占浏览器整个宽度；内联元素在水平方向互相挨着，总体上从左上方流向右下方。2.并排放置内联元素：左元素外边距10px，右元素外边距10px，两个元素之间会有20px的空间；上下放置两个块元素。他们共同的外边距会折叠在一起，两个边框的距离为最大的外边距高度。3.浮动元素（float）：置于块元素上方，不影响正常的页面流">
+<meta property="og:updated_time" content="2015-08-02T07:53:20.162Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="web网页搭建：HTML与CSS（六）">
+<meta name="twitter:description" content="布局与定位
+页面的布局一.流1.块元素从上往下流，个元素之间有一个换行。每个元素默认占浏览器整个宽度；内联元素在水平方向互相挨着，总体上从左上方流向右下方。2.并排放置内联元素：左元素外边距10px，右元素外边距10px，两个元素之间会有20px的空间；上下放置两个块元素。他们共同的外边距会折叠在一起，两个边框的距离为最大的外边距高度。3.浮动元素（float）：置于块元素上方，不影响正常的页面流">
+
+    
+    <link rel="alternative" href="/atom.xml" title="胡志伟&#39;s blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="胡志伟&#39;s blog" title="胡志伟&#39;s blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="胡志伟&#39;s blog">胡志伟&#39;s blog</a></h1>
+				<h2 class="blog-motto">争做有理想，有道德，有文化，有纪律的四有青年</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">存档</a></li>
+					
+						<li><a href="/about">作者</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:yoursite.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/08/02/html与css6/" title="web网页搭建：HTML与CSS（六）" itemprop="url">web网页搭建：HTML与CSS（六）</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="胡志伟" target="_blank" itemprop="author">胡志伟</a>
+		
+  <p class="article-time">
+    <time datetime="2015-08-02T07:53:45.000Z" itemprop="datePublished"> 发表于 2015-08-02</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#布局与定位"><span class="toc-number">1.</span> <span class="toc-text">布局与定位</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#页面的布局"><span class="toc-number">1.1.</span> <span class="toc-text">页面的布局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-流"><span class="toc-number">1.1.1.</span> <span class="toc-text">一.流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-布局"><span class="toc-number">1.1.2.</span> <span class="toc-text">二.布局</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#流体布局"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">流体布局</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#冻结布局"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">冻结布局</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#凝胶布局"><span class="toc-number">1.1.2.3.</span> <span class="toc-text">凝胶布局</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#表格显示布局"><span class="toc-number">1.1.2.4.</span> <span class="toc-text">表格显示布局</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#元素的定位"><span class="toc-number">1.2.</span> <span class="toc-text">元素的定位</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#静态定位（static）"><span class="toc-number">1.2.0.1.</span> <span class="toc-text">静态定位（static）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#绝对定位（absolute）"><span class="toc-number">1.2.0.2.</span> <span class="toc-text">绝对定位（absolute）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#固定定位（fixed）"><span class="toc-number">1.2.0.3.</span> <span class="toc-text">固定定位（fixed）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#相对定位（relative）"><span class="toc-number">1.2.0.4.</span> <span class="toc-text">相对定位（relative）</span></a></li></ol></li></ol></li></ol></li></ol>
+		
+		</div>
+		
+		<h1 id="布局与定位">布局与定位</h1><ul>
+<li><h2 id="页面的布局">页面的布局</h2><h3 id="一-流">一.流</h3>1.块元素从上往下流，个元素之间有一个换行。每个元素默认占浏览器整个宽度；内联元素在水平方向互相挨着，总体上从左上方流向右下方。<br>2.并排放置内联元素：左元素外边距10px，右元素外边距10px，两个元素之间会有20px的空间；上下放置两个块元素。他们共同的外边距会折叠在一起，两个边框的距离为最大的外边距高度。<br>3.浮动元素（float）：置于块元素上方，不影响正常的页面流动。但内联内容会考虑浮动元素的边界，围绕着这个浮动元素。（必须指定特定的高度）<br>4.元素clear属性指定其左边或右边不能有浮动元素。<h3 id="二-布局">二.布局</h3></li>
+<li><h4 id="流体布局">流体布局</h4>拓展浏览器窗口，页面内容会拓展以适应页面。</li>
+<li><h4 id="冻结布局">冻结布局</h4>内容宽度固定。调整屏幕大小，设计不变。示例如下：<br>HTML文件中：<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"allcontent"</span>&gt;</span></span><br><span class="line">      .........</span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>CSS文件中：<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="id">#allcontent</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">800px</span>;</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><h4 id="凝胶布局">凝胶布局</h4>内容宽度固定，但外边距随浏览器窗口扩展，且通常把内容放在中央，更加美观。</li>
+<li><h4 id="表格显示布局">表格显示布局</h4>将元素置于表格当中。示例如下：<br>HTML文件：<figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">&lt;<span class="keyword">div</span> id=<span class="string">"tablecontainer"</span>&gt;        <span class="comment">//表格div</span></span><br><span class="line">  &lt;<span class="keyword">div</span> id=<span class="string">"tablerow"</span>&gt;           <span class="comment">//第一行div，里面包含firstcol和secondcol两列两个元素</span></span><br><span class="line">    &lt;<span class="keyword">div</span> id=<span class="string">"firstcol"</span>&gt;   <span class="comment">//第一个元素</span></span><br><span class="line">      ...</span><br><span class="line">    &lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">    &lt;<span class="keyword">div</span> id=<span class="string">"secondcol"</span>&gt;   <span class="comment">//第二个元素</span></span><br><span class="line">      ...</span><br><span class="line">    &lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">  &lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">  ...</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>CSS文件中：<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="id">#tablecontainer</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>:table;     <span class="comment">//这是表格布局</span></span><br><span class="line">  <span class="attribute">border-spacing</span>: <span class="number">10px</span>; <span class="comment">//单元格边框边距，不需要元素外边距</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="id">#tablerow</span>&#123;          </span><br><span class="line">  <span class="attribute">display</span>:table-row;        <span class="comment">//这是表格的一行</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="id">#main</span>&#123;</span><br><span class="line">  <span class="attribute">vertical-align</span>: top;      <span class="comment">//单元格中的内容相对于单元格上边对齐</span></span><br><span class="line">  <span class="attribute">display</span>: table-cell;      <span class="comment">//这是一个单元表格里的元素</span></span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br><span class="line"><span class="id">#secondcol</span>&#123;</span><br><span class="line">  <span class="attribute">vertical-align</span>: top;</span><br><span class="line">  <span class="attribute">display</span>: table-cell;</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><h2 id="元素的定位">元素的定位</h2>四种定位方式：static,absolute,fixed,relative</li>
+<li><h4 id="静态定位（static）">静态定位（static）</h4>默认方式，将元素置于正常流中。</li>
+<li><h4 id="绝对定位（absolute）">绝对定位（absolute）</h4><p>置于页面任何位置，相对<strong><em>页面</em></strong>边界放置。并不置于流中</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="id">#unix</span><span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value">absolute</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">top</span>:<span class="value"><span class="number">150px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">left</span>:<span class="value"><span class="number">100px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">400px</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><h4 id="固定定位（fixed）">固定定位（fixed）</h4><p>相对浏览器窗口定位，页面滚动，固定定位的元素位置不变。</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="id">#unix</span>&#123;</span><br><span class="line">  <span class="attribute">position</span><span class="value">:fixed;</span></span><br><span class="line">  <span class="attribute">top</span><span class="value">:<span class="number">150px</span>;</span></span><br><span class="line">  <span class="attribute">left</span><span class="value">:<span class="number">100px</span>;</span>    (可以为负值)</span><br><span class="line">  <span class="attribute">width</span><span class="value">:<span class="number">400px</span>;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><h4 id="相对定位（relative）">相对定位（relative）</h4></li>
+</ul>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/web网页/">web网页</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/css/">css</a><a href="/tags/html/">html</a><a href="/tags/web网页制作/">web网页制作</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/08/02/html与css6/" data-title="web网页搭建：HTML与CSS（六） | 胡志伟&#39;s blog" data-tsina="844471533@qq.com" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2015/07/31/html与css5/"  title="web网页搭建：HTML与CSS（五）">
+ <strong>下一篇：</strong><br/> 
+ <span>web网页搭建：HTML与CSS（五）
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/08/02/html与css6/" data-title="web网页搭建：HTML与CSS（六）" data-url="http://yoursite.com/2015/08/02/html与css6/"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#布局与定位"><span class="toc-number">1.</span> <span class="toc-text">布局与定位</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#页面的布局"><span class="toc-number">1.1.</span> <span class="toc-text">页面的布局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-流"><span class="toc-number">1.1.1.</span> <span class="toc-text">一.流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-布局"><span class="toc-number">1.1.2.</span> <span class="toc-text">二.布局</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#流体布局"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">流体布局</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#冻结布局"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">冻结布局</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#凝胶布局"><span class="toc-number">1.1.2.3.</span> <span class="toc-text">凝胶布局</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#表格显示布局"><span class="toc-number">1.1.2.4.</span> <span class="toc-text">表格显示布局</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#元素的定位"><span class="toc-number">1.2.</span> <span class="toc-text">元素的定位</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#静态定位（static）"><span class="toc-number">1.2.0.1.</span> <span class="toc-text">静态定位（static）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#绝对定位（absolute）"><span class="toc-number">1.2.0.2.</span> <span class="toc-text">绝对定位（absolute）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#固定定位（fixed）"><span class="toc-number">1.2.0.3.</span> <span class="toc-text">固定定位（fixed）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#相对定位（relative）"><span class="toc-number">1.2.0.4.</span> <span class="toc-text">相对定位（relative）</span></a></li></ol></li></ol></li></ol></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/web网页/" title="web网页">web网页<sup>6</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/思维改变生活/" title="思维改变生活">思维改变生活<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/读书摘抄/文学/" title="文学">文学<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/读书摘抄/" title="读书摘抄">读书摘抄<sup>2</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/html/" title="html">html<sup>6</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/css/" title="css">css<sup>6</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/web网页制作/" title="web网页制作">web网页制作<sup>6</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/整体性学习/" title="整体性学习">整体性学习<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/书评/" title="书评">书评<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/诗词/" title="诗词">诗词<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/阅读技巧/" title="阅读技巧">阅读技巧<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  
+
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/archives">归档</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">9</span></li></ul>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://www.zhihu.com" target="_blank" title="一个面向程序员交流分享的新一代社区">知乎</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hi！ I&#39;m hu zhiwei. <br/>
+			This is my first blog，welcome to visit！</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		
+		<a href="https://github.com/hu19945285" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		<a href="http://www.zhihu.com/people/hu-zhi-wei-47-49" target="_blank" class="icon-zhihu" title="知乎"></a>
+		
+		
+		
+		<a href="mailto:hzw@mail.nankai.edu.cn" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 
+		
+		<a href="/about" target="_blank" title="胡志伟">胡志伟</a>
+		
+		
+		</p>
+</div>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<span id="busuanzi_container_site_uv">
+                                                                              本站访客数<span id="busuanzi_value_site_uv"></span>人次
+</span>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"think-acting"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>

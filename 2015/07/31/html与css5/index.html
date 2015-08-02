@@ -1,0 +1,539 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>web网页搭建：HTML与CSS（五） | 胡志伟&#39;s blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="胡志伟">
+    
+
+    
+    <meta name="description" content="div逻辑区
+在页面中使用可以将页面分解为逻辑区，保证了结构清晰并便于指定样式。div的使用代码示例如下：
+123456789101112131415161718&amp;lt;div id=&quot;fav&quot;&amp;gt;  //属性说明逻辑区    &amp;lt;div id=&quot;color&quot;&amp;gt;             //颜色逻辑区      &amp;lt;h3&amp;gt;my favorite color:&amp;lt;/h3&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="web网页搭建：HTML与CSS（五）">
+<meta property="og:url" content="http://yoursite.com/2015/07/31/html与css5/index.html">
+<meta property="og:site_name" content="胡志伟's blog">
+<meta property="og:description" content="div逻辑区
+在页面中使用可以将页面分解为逻辑区，保证了结构清晰并便于指定样式。div的使用代码示例如下：
+123456789101112131415161718&amp;lt;div id=&quot;fav&quot;&amp;gt;  //属性说明逻辑区    &amp;lt;div id=&quot;color&quot;&amp;gt;             //颜色逻辑区      &amp;lt;h3&amp;gt;my favorite color:&amp;lt;/h3&amp;">
+<meta property="og:updated_time" content="2015-07-31T09:02:20.321Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="web网页搭建：HTML与CSS（五）">
+<meta name="twitter:description" content="div逻辑区
+在页面中使用可以将页面分解为逻辑区，保证了结构清晰并便于指定样式。div的使用代码示例如下：
+123456789101112131415161718&amp;lt;div id=&quot;fav&quot;&amp;gt;  //属性说明逻辑区    &amp;lt;div id=&quot;color&quot;&amp;gt;             //颜色逻辑区      &amp;lt;h3&amp;gt;my favorite color:&amp;lt;/h3&amp;">
+
+    
+    <link rel="alternative" href="/atom.xml" title="胡志伟&#39;s blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="胡志伟&#39;s blog" title="胡志伟&#39;s blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="胡志伟&#39;s blog">胡志伟&#39;s blog</a></h1>
+				<h2 class="blog-motto">争做有理想，有道德，有文化，有纪律的四有青年</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">存档</a></li>
+					
+						<li><a href="/about">作者</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:yoursite.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/07/31/html与css5/" title="web网页搭建：HTML与CSS（五）" itemprop="url">web网页搭建：HTML与CSS（五）</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="胡志伟" target="_blank" itemprop="author">胡志伟</a>
+		
+  <p class="article-time">
+    <time datetime="2015-07-31T09:02:07.000Z" itemprop="datePublished"> 发表于 2015-07-31</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#div逻辑区"><span class="toc-number">1.</span> <span class="toc-text">div逻辑区</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#在页面中使用可以将页面分解为逻辑区，保证了结构清晰并便于指定样式。"><span class="toc-number">1.1.</span> <span class="toc-text">在页面中使用可以将页面分解为逻辑区，保证了结构清晰并便于指定样式。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#子孙的选择"><span class="toc-number">1.2.</span> <span class="toc-text">子孙的选择</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span逻辑分组"><span class="toc-number">2.</span> <span class="toc-text">span逻辑分组</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#利用可以创建内联字符和元素的逻辑分组"><span class="toc-number">2.1.</span> <span class="toc-text">利用可以创建内联字符和元素的逻辑分组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#span与em，strong的区别"><span class="toc-number">2.2.</span> <span class="toc-text">span与em，strong的区别</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#伪类"><span class="toc-number">3.</span> <span class="toc-text">伪类</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#伪类的运用"><span class="toc-number">3.1.</span> <span class="toc-text">伪类的运用</span></a></li></ol></li></ol>
+		
+		</div>
+		
+		<h1 id="div逻辑区">div逻辑区</h1><ul>
+<li><h2 id="在页面中使用可以将页面分解为逻辑区，保证了结构清晰并便于指定样式。">在页面中使用<div>可以将页面分解为逻辑区，保证了结构清晰并便于指定样式。</div></h2><p>div的使用代码示例如下：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"fav"</span>&gt;</span>  //属性说明逻辑区</span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"color"</span>&gt;</span>             //颜色逻辑区</span><br><span class="line">      <span class="tag">&lt;<span class="title">h3</span>&gt;</span>my favorite color:<span class="tag">&lt;/<span class="title">h3</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="title">ol</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">li</span>&gt;</span>red<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">li</span>&gt;</span>blue<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">li</span>&gt;</span>orange<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">ol</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"city"</span>&gt;</span>           //访问城市逻辑区</span><br><span class="line">    <span class="tag">&lt;<span class="title">h3</span>&gt;</span>the cities i have visited:<span class="tag">&lt;/<span class="title">h3</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">ul</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="title">li</span>&gt;</span>tianjin<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="title">li</span>&gt;</span>beijing<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="title">li</span>&gt;</span>qingdao<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><h2 id="子孙的选择">子孙的选择</h2><p>选择逻辑区的某些元素的子孙元素，使用示例如下：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="id">#fav</span> <span class="tag">h3</span><span class="rules">&#123;</span><br><span class="line">   <span class="rule"><span class="attribute">color</span>:<span class="value">black</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>说明：（该规则选择了id为fav的<div>所有子孙h3元素）<br>fav:父元素<br>h3:子孙元素</div></p>
+<h1 id="span逻辑分组">span逻辑分组</h1><ul>
+<li><h2 id="利用可以创建内联字符和元素的逻辑分组">利用<span>可以创建内联字符和元素的逻辑分组</span></h2>span使用代码示例如下：<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="title">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"position"</span>&gt;</span>wudadao<span class="tag">&lt;/<span class="title">span</span>&gt;</span>,<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"city"</span>&gt;</span>tianjin<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"position"</span>&gt;</span>changcheng<span class="tag">&lt;/<span class="title">span</span>&gt;</span>,<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"city"</span>&gt;</span>beijin<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"position"</span>&gt;</span>badaguan<span class="tag">&lt;/<span class="title">span</span>&gt;</span>,<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"city"</span>&gt;</span>qingdao<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>指定span样式：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.position</span><span class="rules">&#123;</span><br><span class="line">   <span class="rule"><span class="attribute">font-style</span>:<span class="value">italic</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><h2 id="span与em，strong的区别">span与em，strong的区别</h2>em结构用来强调某些文字，strong结构用来强调一个重点。而span只是用来改变某些文字的样式</li>
+</ul>
+<h1 id="伪类">伪类</h1><ul>
+<li><h2 id="伪类的运用">伪类的运用</h2>例如对于a元素来说会有3个状态：未访问，已访问，悬停在链接上方。则可以对不同的状态设置不同的属性。示例代码如下：<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">a</span><span class="pseudo">:link</span>&#123;   <span class="comment">//未访问</span></span><br><span class="line">  <span class="attribute">color</span>: green;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">a</span><span class="pseudo">:visited</span>&#123;   <span class="comment">//已访问</span></span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">a</span><span class="pseudo">:hover</span>&#123;    <span class="comment">//悬停于链接上方</span></span><br><span class="line">  <span class="attribute">color</span>:yellow;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/web网页/">web网页</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/css/">css</a><a href="/tags/html/">html</a><a href="/tags/web网页制作/">web网页制作</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/07/31/html与css5/" data-title="web网页搭建：HTML与CSS（五） | 胡志伟&#39;s blog" data-tsina="844471533@qq.com" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/08/02/html与css6/" title="web网页搭建：HTML与CSS（六）">
+  <strong>上一篇：</strong><br/>
+  <span>
+  web网页搭建：HTML与CSS（六）</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/07/31/html与css4/"  title="web网页搭建：HTML与CSS（四）">
+ <strong>下一篇：</strong><br/> 
+ <span>web网页搭建：HTML与CSS（四）
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/07/31/html与css5/" data-title="web网页搭建：HTML与CSS（五）" data-url="http://yoursite.com/2015/07/31/html与css5/"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#div逻辑区"><span class="toc-number">1.</span> <span class="toc-text">div逻辑区</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#在页面中使用可以将页面分解为逻辑区，保证了结构清晰并便于指定样式。"><span class="toc-number">1.1.</span> <span class="toc-text">在页面中使用可以将页面分解为逻辑区，保证了结构清晰并便于指定样式。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#子孙的选择"><span class="toc-number">1.2.</span> <span class="toc-text">子孙的选择</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span逻辑分组"><span class="toc-number">2.</span> <span class="toc-text">span逻辑分组</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#利用可以创建内联字符和元素的逻辑分组"><span class="toc-number">2.1.</span> <span class="toc-text">利用可以创建内联字符和元素的逻辑分组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#span与em，strong的区别"><span class="toc-number">2.2.</span> <span class="toc-text">span与em，strong的区别</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#伪类"><span class="toc-number">3.</span> <span class="toc-text">伪类</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#伪类的运用"><span class="toc-number">3.1.</span> <span class="toc-text">伪类的运用</span></a></li></ol></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/web网页/" title="web网页">web网页<sup>6</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/思维改变生活/" title="思维改变生活">思维改变生活<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/读书摘抄/文学/" title="文学">文学<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/读书摘抄/" title="读书摘抄">读书摘抄<sup>2</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/html/" title="html">html<sup>6</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/css/" title="css">css<sup>6</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/web网页制作/" title="web网页制作">web网页制作<sup>6</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/整体性学习/" title="整体性学习">整体性学习<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/书评/" title="书评">书评<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/诗词/" title="诗词">诗词<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/阅读技巧/" title="阅读技巧">阅读技巧<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  
+
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/archives">归档</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">9</span></li></ul>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://www.zhihu.com" target="_blank" title="一个面向程序员交流分享的新一代社区">知乎</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hi！ I&#39;m hu zhiwei. <br/>
+			This is my first blog，welcome to visit！</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		
+		<a href="https://github.com/hu19945285" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		<a href="http://www.zhihu.com/people/hu-zhi-wei-47-49" target="_blank" class="icon-zhihu" title="知乎"></a>
+		
+		
+		
+		<a href="mailto:hzw@mail.nankai.edu.cn" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 
+		
+		<a href="/about" target="_blank" title="胡志伟">胡志伟</a>
+		
+		
+		</p>
+</div>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<span id="busuanzi_container_site_uv">
+                                                                              本站访客数<span id="busuanzi_value_site_uv"></span>人次
+</span>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"think-acting"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
