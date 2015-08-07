@@ -1,42 +1,135 @@
 
   
-      <!dectype html>
-
-  <html> <!--my first html-->
-  <head>
-    <title>my first html</title>
-    <meta charset="utf-8">
-    <link type="style/css" rel="stylesheet" href="style.css" <="" head="">
-  </head><body>   
-   <img src="images/logo.gif">
-   <h1 class="green">nankai university</h1>
-   <h2 id="d" class="green">person info</h2>
-   <p>hello,my name is <a href="information/huzhiwei.html" title="person information">huzhiwei</a> ,
-     i'm from <strong>nankai</strong>
-     university,this is my first html!</p>
-     <a target="_black" href="information/huzhiwei.html#pi"><img src="images/hzw.png"></a>
-     <h3>my favorite color:</h3>
-     <ol>
-      <li>red</li>
-      <li>blue</li>
-      <li>orange</li>
-    </ol>
-    <h3>the cities i have visited:</h3>
-    <ul>
-     <li>tianjin</li>
-     <li>beijin</li>
-     <li>qingdao</li>
-   </ul>
-   <h2 class="green">demo</h2>
-   <p>test for first time!Here is my favorite quote:<q>Do not wish for an easy life. 
-     Wish for the strength to endure a difficult one.</q>just for it!</p>
-     <blockquote>Do not wish for an easy life. <br>
-       Wish for the strength to endure a difficult one.
-     </blockquote>
-     <p class="guarantee">在中国古文中，历来是诗以言志，士志于道。中国古代的士人都有着“窃比稷与契”的情怀，士以天下为己任，正心，诚意，修身，齐家，治国，平天下。因而诗人往往直接在诗中书法情怀。而词却不同，词之为体，要眇宜修。词讲究的是以道贤人君子幽约怨悱不能自言之情。词是婉约的，微妙的。正如南唐中主的一句“菡萏香销翠叶残，西风愁起绿波间”大有众芳芜秽，美人迟暮之感。读小词要善于联想，要体会语句中隐含的感情，这是双重性别的作用。在中国古代普通女人是不允许读书的，因此写词的大部分是男性。因此词人在写词刻画人物的时候便不自觉的掺杂了自己的感情，因而对小词的解读也就有了多义性。而正是这种多样性造就了小词的美感。</p>
-     <p>my first code:</p>
-     <code>hello world!</code>
-     <pre>  programming !</pre>
-     </body>
-     </html>
+    
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>zhiwei's blog</title>
+		<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="main-wrapper">
+			<header>   <!--页头-->
+				<nav>
+				<div class="logo"><a href="index.html">一知半解半吊子</a></div>
+					<ul> 
+						<li><a href=".." class="active">blog首页</a></li>
+						<li><a href="#myfav">爱好</a></li>
+						<li><a href="#learn">整体学习</a></li>
+					</ul>
+				</nav>
+				<div id="banner">
+					<div class="inner">
+						<h1>胡志伟</h1>
+						<p class="sub-heading">一个争做有理想，有道德，有文化，有纪律四有青年的半吊子程序猿</p>
+						<button>了解我</button>
+						<div class="more">更多</div>
+					</div>
+				</div>
+			</header>
+			<div class="content">            <!--内容-->
+				<section class="green-section" id="myfav">
+					<div class="wrapper">
+						<div>
+							<h2>我的爱好</h2>
+							<div class="hr"></div>
+							<p class="sub-heading">兴趣广泛<br>爱读书，爱散步，爱听歌<br>爱旅游，爱睡觉，爱看电影<br>不喜食物，不善言谈,不是屌丝</p>
+						</div>
+						<div class="icon-group">
+							<span class="icon"><i class="fa fa-book fa-3x"></i></span>
+							<span class="icon"><i class="fa fa-child fa-3x"></i></span>
+							<span class="icon"><i class="fa fa-bus fa-3x"></i></span>
+						</div>
+					</div>
+				</section>
+				<section class="gray-section">
+					<div class="article-preview">
+						<div class="text-section">
+							<h2>旅行的意义</h2>
+							<p>旅行的意义并不是告诉别人“这里我来过”，而是一种改变。旅行改变人的气质，让人的目光变得更加长远。在旅途中，你会看到不同的人有不同的习惯，你才能了解到，并不是每个人都按照你的方式在生活。</p>
+						</div>
+						<div class="img-section">
+							<img src="img/pic01.jpg" alt="" height="400px">
+						</div>					
+					</div>
+					<div class="article-preview">
+						<div class="img-section">
+							<img src="img/pic02.jpg" alt="" height="400px">
+						</div>
+						<div class="text-section">
+							<h2>终其一生，学无止境</h2>
+							<p>读书是一种思考与认知，它并不能为你带来直接的财富提升，却能有助于你更好的了解这个世界。我们常说知识改变命运，实则是知识改变了你对整个世界的认知，对每一件事情的态度。</p>
+						</div>
+					</div>	
+					<div class="article-preview">
+						<div class="text-section">
+							<h2>发现另一个世界</h2>
+							<p>听别人的故事，过一次短暂，却一辈子都无法践行的别人的人生。</p>
+						</div>
+						<div class="img-section">
+							<img src="img/pic03.jpg" alt="">
+						</div>					
+					</div>							
+				</section>
+				<section class="purple-section" id="learn">
+				<div class="wrapper">
+					<div class="heading-wrapper">
+						<h2>整体性学习</h2>
+						<div class="hr"></div>
+						<div class="sub-heading">整体性学习就是看待知识的角度是多方面的。基础就是将知识关联起来以达到记忆和应用知识的目的，开始学习的最佳技术是比喻、内在化、基于流程的记事和画图表法，这些方法构成了整体性学习的基础。</div>
+					</div>
+					<div class="card-group clearfix">
+						<div class="card">
+							<h3>获取</h3>
+							<p>获取就是信息进入你的眼睛和耳朵，阅读、课堂上记笔记以及个人的种种经历都是获取。获取阶段的目标是获取的信息要准确，信息量要尽量压缩。</p>
+						</div>
+						<div class="card">
+							<h3>理解</h3>
+							<p>理解就是了解信息的基本意思，并放在上下文中联系，这是学习的最基本联系。</p>
+						</div>		
+						<div class="card">
+							<h3>理解</h3>
+							<p>拓展阶段是整体性学习中最花力气的地方，这一步将形成模型、高速公路和广泛的联系，从而获得良好的结构。 </p>
+						</div>
+						<div class="card">
+							<h3>纠错</h3>
+							<p>纠错阶段是在模型和高速公路中寻找错误，这个阶段要删除那些无效的联系。 </p>
+						</div>	
+						<div class="card">
+							<h3>应用</h3>
+							<p>应用把纠错带入最后的水平，通过比较（知识）信息是如何在现实中运行的来进行调整，如果理解不符合现实世界，那么再多也无用。在这一步中失败的典型例子就是书呆子，即那些读书读得很好但是出了学校大门却茫然不知所措的家伙。 </p>
+						</div>
+						<div class="card">
+							<h3>测试</h3>
+							<p>上述阶段的每一步都需要测试，测试有助于你迅速找到学习中的问题所在，帮助你改进学习技术，克服缺点。</p>
+						</div>													
+					</div>				
+				</div>
+				</section>
+			</div>
+			<footer>             <!--页脚-->
+				<div>
+					<article>
+						Hu Zhiwei (胡志伟)<br>                                
+						计算机与控制工程学院 南开大学<br>
+						Tianjin , China ,300071 <br> 
+						E-mail: hzw@mail.nankai.edu.cn <br>
+						欢迎联系。
+					</article>
+				</div>
+				<div class="foot">
+				    <ul class="fa-ul">
+						<li><a target="_black" href="https://github.com/hu19945285"><i class="fa-li fa fa-github-square fa-2x"></i></a></li>
+						<li><a target="_black" href="http://www.linkedin.com/home?trk=nav_responsive_tab_home"><i class="fa-li fa fa-linkedin fa-2x"></i></a></li>
+						<li><a target="_black" href="http://t.qq.com/kk-bup?preview"><i class="fa-li fa fa-pinterest-square fa-2x"></i></a></li> 
+					</ul>
+					<div class="copy">&copy 南开大学 胡志伟 -2015</div>			
+				</div>
+			</footer>			
+		</div>
+	</body>
+</html>
   
